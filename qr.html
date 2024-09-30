@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            body {
-                font-family: 'Inter', sans-serif;
-            }
-        </style>
-        <title>Qr code</title>
-    </head>
-    
-    <body class="bg-gradient-to-r from-blue-50 to-purple-50">
 
-        <!-- header -->
-        <header
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <title>Qr code</title>
+</head>
+
+<body class="bg-gradient-to-r from-blue-50 to-purple-50">
+
+    <!-- header -->
+    <header
         class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg p-4 flex items-center justify-between text-white">
         <div class="flex items-center space-x-4">
             <img src="profile.jpg" alt="Instructor Profile"
@@ -30,12 +31,18 @@
             Dashboard</button>
     </header>
 
-        <!-- QR at the center -->
-        <div class="flex items-center justify-center" style="min-height: 80vh;"> <!-- Adjusted min-height -->
-            <div class="flex items-center justify-center bg-white p-10 rounded-lg shadow-lg">
-                <img src="https://via.placeholder.com/500" alt="QR Code" class="w-96 h-96" />
-            </div>
+    <!-- QR at the center -->
+    <div class="flex items-center justify-center mb-2" style="min-height: 80vh;">
+        <div class="flex items-center justify-center bg-white p-10 rounded-lg shadow-lg">
+            <img src="https://via.placeholder.com/500" alt="QR Code" class="w-96 h-96" />
         </div>
+    </div>
+
+
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-4">
+        <p class="m-0">&copy; 2024 smartEDU. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
