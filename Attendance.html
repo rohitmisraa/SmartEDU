@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <title>Attendance </title>
+</head>
+
+<body class="bg-gradient-to-r from-blue-50 to-purple-50">
+
+
+    <!-- Header Section -->
+    <header
+        class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg p-4 flex items-center justify-between text-white">
+        <div class="flex items-center space-x-4">
+            <img src="profile.jpg" alt="Instructor Profile"
+                class="w-12 h-12 rounded-full border-2 border-white shadow-md">
+            <div>
+                <h1 class="text-2xl font-semibold">Udit Pandey</h1>
+                <p class="text-sm opacity-75">smartEDU</p>
+            </div>
+        </div>
+        <button
+            class="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-gray-200 transition">My
+            Dashboard</button>
+    </header>
+
+
+    <!-- stats -->
+
+    <div class="grid grid-cols-3 gap-4 mb-6 mt-3 p-2">
+        <!-- Classes -->
+        <div class="bg-white p-4 rounded-lg text-center shadow-lg hover:shadow-xl transition ">
+            <p class="text-2xl font-bold text-purple-600">1</p>
+            <p class="text-blue-700">Classes</p>
+        </div>
+        <!-- Total Students -->
+        <div class="bg-white p-4 rounded-lg text-center shadow-lg hover:shadow-xl transition">
+            <p class="text-2xl font-bold text-purple-600">30</p>
+            <p class="text-blue-700"> Total Students</p>
+        </div>
+        <!-- Present student  -->
+        <div class="bg-white p-4 rounded-lg text-center shadow-lg hover:shadow-xl transition">
+            <p class="text-2xl font-bold text-purple-600">20</p>
+            <p class="text-blue-700">Present Student </p>
+        </div>
+    </div>
+
+
+
+    <div class="flex items-center justify-center h-auto mt-10 mb-10">
+        <a href="qr.html" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out">
+            Generate QR
+        </a>
+    </div>
+
+    <!-- Middle present -->
+
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-2xl font-bold text-gray-800 text-center mb-4">Attendance Record</h3>
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead class="bg-blue-500 text-white">
+                <tr>
+                    <th class="py-2 px-4 border border-gray-300">Student Name</th>
+                    <th class="py-2 px-4 border border-gray-300">Roll Number</th>
+                    <th class="py-2 px-4 border border-gray-300">Time of Scanning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4 border border-gray-300 text-center">John Doe</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">01</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">10:00 AM</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4 border border-gray-300 text-center">Jane Smith</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">02</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">10:02 AM</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4 border border-gray-300 text-center">Mike Johnson</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">03</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">10:05 AM</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4 border border-gray-300 text-center">Emily Davis</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">04</td>
+                    <td class="py-2 px-4 border border-gray-300 text-center">10:07 AM</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-4 mb-0">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+        
+
+</body>
+
+</html>
